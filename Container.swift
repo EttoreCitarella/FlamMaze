@@ -15,6 +15,7 @@ enum GameStatus {
 }
 
 class GameLogic {
+    /// The singleton instance for GameLlogic
     static var shared = GameLogic()
     var status: GameStatus = .playing
 }
