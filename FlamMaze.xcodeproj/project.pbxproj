@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C116DA4729B60902006639D8 /* FlamMazeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA4629B60902006639D8 /* FlamMazeApp.swift */; };
+		C116DA4929B60902006639D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA4829B60902006639D8 /* ContentView.swift */; };
+		C116DA4B29B60904006639D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C116DA4A29B60904006639D8 /* Assets.xcassets */; };
+		C116DA4E29B60904006639D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C116DA4D29B60904006639D8 /* Preview Assets.xcassets */; };
+		C116DA5829B60904006639D8 /* FlamMazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA5729B60904006639D8 /* FlamMazeTests.swift */; };
+		C116DA6229B60904006639D8 /* FlamMazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA6129B60904006639D8 /* FlamMazeUITests.swift */; };
+		C116DA6429B60904006639D8 /* FlamMazeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA6329B60904006639D8 /* FlamMazeUITestsLaunchTests.swift */; };
+		C116DA7329B609F0006639D8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA7229B609F0006639D8 /* GameScene.swift */; };
+		C116DA7529B60B7A006639D8 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA7429B60B7A006639D8 /* FirstPage.swift */; };
+		C116DA7729B6184B006639D8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C116DA7629B6184B006639D8 /* GameScene.sks */; };
+		C116DA7929B62BF8006639D8 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA7829B62BF8006639D8 /* SecondPage.swift */; };
+		C116DA7B29B62D25006639D8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA7A29B62D25006639D8 /* Score.swift */; };
+		C116DA7D29B637D1006639D8 /* Win.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA7C29B637D1006639D8 /* Win.swift */; };
+		C116DA7F29B63A5A006639D8 /* Lose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA7E29B63A5A006639D8 /* Lose.swift */; };
+		C116DA8129B63D0F006639D8 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DA8029B63D0F006639D8 /* Container.swift */; };
+		C116DAC229B75A16006639D8 /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C116DAC129B75A16006639D8 /* ContactController.swift */; };
+		C116DAC429B78888006639D8 /* FirstPage.sks in Resources */ = {isa = PBXBuildFile; fileRef = C116DAC329B78888006639D8 /* FirstPage.sks */; };
+		C116DAC629B7909F006639D8 /* Win.sks in Resources */ = {isa = PBXBuildFile; fileRef = C116DAC529B7909F006639D8 /* Win.sks */; };
+		C116DAC829B79355006639D8 /* lose.sks in Resources */ = {isa = PBXBuildFile; fileRef = C116DAC729B79355006639D8 /* lose.sks */; };
+		C116DACA29B79CE1006639D8 /* secondPage.sks in Resources */ = {isa = PBXBuildFile; fileRef = C116DAC929B79CE1006639D8 /* secondPage.sks */; };
+		C116DAD029B80FDD006639D8 /* mixkit-melodic-bonus-collect-1938.wav in Resources */ = {isa = PBXBuildFile; fileRef = C116DACF29B80FDD006639D8 /* mixkit-melodic-bonus-collect-1938.wav */; };
+		C116DAD429B88304006639D8 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C116DAD329B88304006639D8 /* button.mp3 */; };
+		C116DAD529B8836E006639D8 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C116DAD329B88304006639D8 /* button.mp3 */; };
+		C116DADB29B8A116006639D8 /* Esplosione-bomba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C116DADA29B8A116006639D8 /* Esplosione-bomba.mp3 */; };
+		C116DADC29B8A132006639D8 /* Esplosione-bomba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C116DADA29B8A116006639D8 /* Esplosione-bomba.mp3 */; };
+		C116DADE29B8A198006639D8 /* Win2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C116DADD29B8A18C006639D8 /* Win2.m4a */; };
+		C116DAE029B8A4DD006639D8 /* Power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C116DADF29B8A4DC006639D8 /* Power.mp3 */; };
+		C1A51E3A29B8D66000B370E7 /* Power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C116DADF29B8A4DC006639D8 /* Power.mp3 */; };
+		C1A51E3C29B9FA7800B370E7 /* SecondLevel.sks in Resources */ = {isa = PBXBuildFile; fileRef = C1A51E3B29B9FA7800B370E7 /* SecondLevel.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C116DA5429B60904006639D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C116DA3B29B60902006639D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C116DA4229B60902006639D8;
+			remoteInfo = FlamMaze;
+		};
+		C116DA5E29B60904006639D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C116DA3B29B60902006639D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C116DA4229B60902006639D8;
+			remoteInfo = FlamMaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C116DA4329B60902006639D8 /* FlamMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlamMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C116DA4629B60902006639D8 /* FlamMazeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamMazeApp.swift; sourceTree = "<group>"; };
+		C116DA4829B60902006639D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C116DA4A29B60904006639D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C116DA4D29B60904006639D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C116DA5329B60904006639D8 /* FlamMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C116DA5729B60904006639D8 /* FlamMazeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamMazeTests.swift; sourceTree = "<group>"; };
+		C116DA5D29B60904006639D8 /* FlamMazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamMazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C116DA6129B60904006639D8 /* FlamMazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamMazeUITests.swift; sourceTree = "<group>"; };
+		C116DA6329B60904006639D8 /* FlamMazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamMazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C116DA7229B609F0006639D8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C116DA7429B60B7A006639D8 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		C116DA7629B6184B006639D8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C116DA7829B62BF8006639D8 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		C116DA7A29B62D25006639D8 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		C116DA7C29B637D1006639D8 /* Win.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win.swift; sourceTree = "<group>"; };
+		C116DA7E29B63A5A006639D8 /* Lose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lose.swift; sourceTree = "<group>"; };
+		C116DA8029B63D0F006639D8 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		C116DAC129B75A16006639D8 /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		C116DAC329B78888006639D8 /* FirstPage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirstPage.sks; sourceTree = "<group>"; };
+		C116DAC529B7909F006639D8 /* Win.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Win.sks; sourceTree = "<group>"; };
+		C116DAC729B79355006639D8 /* lose.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = lose.sks; sourceTree = "<group>"; };
+		C116DAC929B79CE1006639D8 /* secondPage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = secondPage.sks; sourceTree = "<group>"; };
+		C116DACF29B80FDD006639D8 /* mixkit-melodic-bonus-collect-1938.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-melodic-bonus-collect-1938.wav"; sourceTree = "<group>"; };
+		C116DAD329B88304006639D8 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
+		C116DADA29B8A116006639D8 /* Esplosione-bomba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Esplosione-bomba.mp3"; sourceTree = "<group>"; };
+		C116DADD29B8A18C006639D8 /* Win2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Win2.m4a; sourceTree = "<group>"; };
+		C116DADF29B8A4DC006639D8 /* Power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Power.mp3; sourceTree = "<group>"; };
+		C1A51E3B29B9FA7800B370E7 /* SecondLevel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SecondLevel.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C116DA4029B60902006639D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116DA5029B60904006639D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116DA5A29B60904006639D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C116DA3A29B60902006639D8 = {
+			isa = PBXGroup;
+			children = (
+				C1A51E3B29B9FA7800B370E7 /* SecondLevel.sks */,
+				C116DAC929B79CE1006639D8 /* secondPage.sks */,
+				C116DAC729B79355006639D8 /* lose.sks */,
+				C116DAC529B7909F006639D8 /* Win.sks */,
+				C116DAC329B78888006639D8 /* FirstPage.sks */,
+				C116DA8029B63D0F006639D8 /* Container.swift */,
+				C116DADA29B8A116006639D8 /* Esplosione-bomba.mp3 */,
+				C116DADF29B8A4DC006639D8 /* Power.mp3 */,
+				C116DACF29B80FDD006639D8 /* mixkit-melodic-bonus-collect-1938.wav */,
+				C116DADD29B8A18C006639D8 /* Win2.m4a */,
+				C116DAD329B88304006639D8 /* button.mp3 */,
+				C116DA7A29B62D25006639D8 /* Score.swift */,
+				C116DA7829B62BF8006639D8 /* SecondPage.swift */,
+				C116DA7C29B637D1006639D8 /* Win.swift */,
+				C116DA7E29B63A5A006639D8 /* Lose.swift */,
+				C116DA7629B6184B006639D8 /* GameScene.sks */,
+				C116DA7429B60B7A006639D8 /* FirstPage.swift */,
+				C116DA7229B609F0006639D8 /* GameScene.swift */,
+				C116DAC129B75A16006639D8 /* ContactController.swift */,
+				C116DA4529B60902006639D8 /* FlamMaze */,
+				C116DA5629B60904006639D8 /* FlamMazeTests */,
+				C116DA6029B60904006639D8 /* FlamMazeUITests */,
+				C116DA4429B60902006639D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C116DA4429B60902006639D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C116DA4329B60902006639D8 /* FlamMaze.app */,
+				C116DA5329B60904006639D8 /* FlamMazeTests.xctest */,
+				C116DA5D29B60904006639D8 /* FlamMazeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C116DA4529B60902006639D8 /* FlamMaze */ = {
+			isa = PBXGroup;
+			children = (
+				C116DA4629B60902006639D8 /* FlamMazeApp.swift */,
+				C116DA4829B60902006639D8 /* ContentView.swift */,
+				C116DA4A29B60904006639D8 /* Assets.xcassets */,
+				C116DA4C29B60904006639D8 /* Preview Content */,
+			);
+			path = FlamMaze;
+			sourceTree = "<group>";
+		};
+		C116DA4C29B60904006639D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C116DA4D29B60904006639D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C116DA5629B60904006639D8 /* FlamMazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C116DA5729B60904006639D8 /* FlamMazeTests.swift */,
+			);
+			path = FlamMazeTests;
+			sourceTree = "<group>";
+		};
+		C116DA6029B60904006639D8 /* FlamMazeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C116DA6129B60904006639D8 /* FlamMazeUITests.swift */,
+				C116DA6329B60904006639D8 /* FlamMazeUITestsLaunchTests.swift */,
+			);
+			path = FlamMazeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C116DA4229B60902006639D8 /* FlamMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C116DA6729B60904006639D8 /* Build configuration list for PBXNativeTarget "FlamMaze" */;
+			buildPhases = (
+				C116DA3F29B60902006639D8 /* Sources */,
+				C116DA4029B60902006639D8 /* Frameworks */,
+				C116DA4129B60902006639D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlamMaze;
+			productName = FlamMaze;
+			productReference = C116DA4329B60902006639D8 /* FlamMaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C116DA5229B60904006639D8 /* FlamMazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C116DA6A29B60904006639D8 /* Build configuration list for PBXNativeTarget "FlamMazeTests" */;
+			buildPhases = (
+				C116DA4F29B60904006639D8 /* Sources */,
+				C116DA5029B60904006639D8 /* Frameworks */,
+				C116DA5129B60904006639D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C116DA5529B60904006639D8 /* PBXTargetDependency */,
+			);
+			name = FlamMazeTests;
+			productName = FlamMazeTests;
+			productReference = C116DA5329B60904006639D8 /* FlamMazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C116DA5C29B60904006639D8 /* FlamMazeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C116DA6D29B60904006639D8 /* Build configuration list for PBXNativeTarget "FlamMazeUITests" */;
+			buildPhases = (
+				C116DA5929B60904006639D8 /* Sources */,
+				C116DA5A29B60904006639D8 /* Frameworks */,
+				C116DA5B29B60904006639D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C116DA5F29B60904006639D8 /* PBXTargetDependency */,
+			);
+			name = FlamMazeUITests;
+			productName = FlamMazeUITests;
+			productReference = C116DA5D29B60904006639D8 /* FlamMazeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C116DA3B29B60902006639D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C116DA4229B60902006639D8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C116DA5229B60904006639D8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C116DA4229B60902006639D8;
+					};
+					C116DA5C29B60904006639D8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C116DA4229B60902006639D8;
+					};
+				};
+			};
+			buildConfigurationList = C116DA3E29B60902006639D8 /* Build configuration list for PBXProject "FlamMaze" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C116DA3A29B60902006639D8;
+			productRefGroup = C116DA4429B60902006639D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C116DA4229B60902006639D8 /* FlamMaze */,
+				C116DA5229B60904006639D8 /* FlamMazeTests */,
+				C116DA5C29B60904006639D8 /* FlamMazeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C116DA4129B60902006639D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A51E3A29B8D66000B370E7 /* Power.mp3 in Resources */,
+				C116DADE29B8A198006639D8 /* Win2.m4a in Resources */,
+				C1A51E3C29B9FA7800B370E7 /* SecondLevel.sks in Resources */,
+				C116DADC29B8A132006639D8 /* Esplosione-bomba.mp3 in Resources */,
+				C116DAD529B8836E006639D8 /* button.mp3 in Resources */,
+				C116DAC629B7909F006639D8 /* Win.sks in Resources */,
+				C116DACA29B79CE1006639D8 /* secondPage.sks in Resources */,
+				C116DA4E29B60904006639D8 /* Preview Assets.xcassets in Resources */,
+				C116DAC829B79355006639D8 /* lose.sks in Resources */,
+				C116DAC429B78888006639D8 /* FirstPage.sks in Resources */,
+				C116DA7729B6184B006639D8 /* GameScene.sks in Resources */,
+				C116DA4B29B60904006639D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116DA5129B60904006639D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116DA5B29B60904006639D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C116DAE029B8A4DD006639D8 /* Power.mp3 in Resources */,
+				C116DADB29B8A116006639D8 /* Esplosione-bomba.mp3 in Resources */,
+				C116DAD429B88304006639D8 /* button.mp3 in Resources */,
+				C116DAD029B80FDD006639D8 /* mixkit-melodic-bonus-collect-1938.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C116DA3F29B60902006639D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C116DA7F29B63A5A006639D8 /* Lose.swift in Sources */,
+				C116DA7329B609F0006639D8 /* GameScene.swift in Sources */,
+				C116DA7929B62BF8006639D8 /* SecondPage.swift in Sources */,
+				C116DA4929B60902006639D8 /* ContentView.swift in Sources */,
+				C116DA4729B60902006639D8 /* FlamMazeApp.swift in Sources */,
+				C116DA7B29B62D25006639D8 /* Score.swift in Sources */,
+				C116DAC229B75A16006639D8 /* ContactController.swift in Sources */,
+				C116DA7D29B637D1006639D8 /* Win.swift in Sources */,
+				C116DA8129B63D0F006639D8 /* Container.swift in Sources */,
+				C116DA7529B60B7A006639D8 /* FirstPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116DA4F29B60904006639D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C116DA5829B60904006639D8 /* FlamMazeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116DA5929B60904006639D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C116DA6429B60904006639D8 /* FlamMazeUITestsLaunchTests.swift in Sources */,
+				C116DA6229B60904006639D8 /* FlamMazeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C116DA5529B60904006639D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C116DA4229B60902006639D8 /* FlamMaze */;
+			targetProxy = C116DA5429B60904006639D8 /* PBXContainerItemProxy */;
+		};
+		C116DA5F29B60904006639D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C116DA4229B60902006639D8 /* FlamMaze */;
+			targetProxy = C116DA5E29B60904006639D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C116DA6529B60904006639D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C116DA6629B60904006639D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C116DA6829B60904006639D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlamMaze/Preview Content\"";
+				DEVELOPMENT_TEAM = UDYL63JK54;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FlamMazeex;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ettore.Game.FlamMazee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C116DA6929B60904006639D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlamMaze/Preview Content\"";
+				DEVELOPMENT_TEAM = UDYL63JK54;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FlamMazeex;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ettore.Game.FlamMazee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C116DA6B29B60904006639D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UDYL63JK54;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ettore.Gamer.FlamMazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlamMaze.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlamMaze";
+			};
+			name = Debug;
+		};
+		C116DA6C29B60904006639D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UDYL63JK54;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ettore.Gamer.FlamMazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlamMaze.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlamMaze";
+			};
+			name = Release;
+		};
+		C116DA6E29B60904006639D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UDYL63JK54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ettore.Gamer.FlamMazeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlamMaze;
+			};
+			name = Debug;
+		};
+		C116DA6F29B60904006639D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UDYL63JK54;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ettore.Gamer.FlamMazeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlamMaze;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C116DA3E29B60902006639D8 /* Build configuration list for PBXProject "FlamMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C116DA6529B60904006639D8 /* Debug */,
+				C116DA6629B60904006639D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C116DA6729B60904006639D8 /* Build configuration list for PBXNativeTarget "FlamMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C116DA6829B60904006639D8 /* Debug */,
+				C116DA6929B60904006639D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C116DA6A29B60904006639D8 /* Build configuration list for PBXNativeTarget "FlamMazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C116DA6B29B60904006639D8 /* Debug */,
+				C116DA6C29B60904006639D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C116DA6D29B60904006639D8 /* Build configuration list for PBXNativeTarget "FlamMazeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C116DA6E29B60904006639D8 /* Debug */,
+				C116DA6F29B60904006639D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C116DA3B29B60902006639D8 /* Project object */;
+}
